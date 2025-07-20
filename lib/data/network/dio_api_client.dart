@@ -12,7 +12,7 @@ class DioApiClient {
   DioApiClient._internal() {
     _dio = Dio(
       BaseOptions(
-        baseUrl: 'https://v3.football.api-sports.io',
+        baseUrl: 'https://v3.football.api-sports.io/leagues',
         connectTimeout: const Duration(seconds: 10),
         receiveTimeout: const Duration(seconds: 10),
         headers: {

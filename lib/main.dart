@@ -9,6 +9,10 @@ import 'package:get/get.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
+
+  String? apiKey = dotenv.env['API_FOOTBALL_KEY'];
+  print('KEY = $apiKey');
+
   runApp(const MyApp());
 }
 
